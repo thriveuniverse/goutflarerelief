@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Daily Gout Plan – launching in 72 hours</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Kelly – 48-Hour Gout Flare Rescue Protocol</title>
   <style>
-    body {
-      font-family: system-ui;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 4rem 1rem;
+    body { 
+      font-family: system-ui, -apple-system, sans-serif; 
+      line-height: 1.7; 
+      max-width: 720px; 
+      margin: 3rem auto; 
+      padding: 1rem; 
+      background: #F5F2E9; 
+      color: #4A4A4A;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .coming {
-      font-size: 1.5rem;
+    h1 { margin-top: 0; font-size: 2.2rem; }
+    .hero { 
+      display: flex; 
+      align-items: center; 
+      gap: 2.5rem; 
       margin: 2rem 0;
     }
-    input,
-    button {
-      padding: 1rem;
-      font-size: 1.2rem;
-      margin: 1rem;
-      width: 90%;
-      max-width: 400px;
+    .photo { 
+      width: 230px; 
+      height: 230px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .box { 
+      background: #FFFFFF; 
+      padding: 1.8rem; 
+      border-radius: 12px; 
+      border: 1px solid #A8C4A0; 
+      margin: 2.5rem 0; 
+    }
+    .button { 
+      background: #FF6F61; 
+      color: white; 
+      padding: 1.1rem 2.8rem; 
+      font-size: 1.3rem; 
+      font-weight: 600;
+      text-decoration: none; 
+      border-radius: 10px; 
+      display: inline-block; 
+      margin: 2rem 0;
+      transition: background 0.3s;
+    }
+    .button:hover { background: #4A9A8F; }
+    .small { font-size: 0.9rem; color: #666; }
+    hr { border: none; height: 1px; background: #ddd; margin: 3rem 0; }
+
+    /* Mobile-first magic */
+    @media (max-width: 768px) {
+      .hero { 
+        flex-direction: column; 
+        text-align: center;
+      }
+      .photo { 
+        order: 2;           /* photo goes BELOW text on mobile */
+        width: 180px; 
+        height: 180px; 
+        margin-top: 1.5rem;
+      }
+      h1 { font-size: 1.9rem; }
     }
   </style>
 </head>
 <body>
-  <h1>DailyGoutPlan.com</h1>
-  <p class="coming">Launching in 72 hours – the exact 48-hour protocol that ended my last flare in 36 hours</p>
-  <p>Drop your email for first access + free “Emergency Day Planner”</p>
-  <form action="https://buttondown.email/api/emails/embed-subscribe/yourusername"
-        method="post"
-        target="popupwindow">
-    <input type="email"
-           name="email"
-           placeholder="your@email.com"
-           required>
-    <button type="submit">Send me the day planner →</button>
-  </form>
+
+  <div class="hero">
+    <div>
+      <h1>Hi, I’m Jonathan Kelly</h1>
+      <p>Three weeks ago I woke up at 3 a.m. screaming. My big toe was on fire. I literally couldn’t let the duvet touch it.</p>
+      <p>That was my first gout attack — November 2025.</p>
+    </div>
+    <img src="jonathan.jpg" alt="Jonathan Kelly" class="photo">
+  </div>
+
+  <div class="box">
+    <h3>Quick reality check (because I wish someone had told me this on day one)</h3>
+    <ul>
+      <li><strong>Gout is not a death sentence.</strong> It’s just too much uric acid crystallising in your joints.</li>
+      <li><strong>It is not “old man disease”</strong> — I was fit and thought I was invincible.</li>
+      <li><strong>Flares are brutal but short</strong> — untreated they last 7–14 days. Treated properly most people are walking again in 2–4 days.</li>
+      <li><strong>You can get full control</strong> — thousands of us live flare-free for years once we know the rules.</li>
+    </ul>
+  </div>
+
+  <p>I spent three days researching, talking to rheumatologists, and testing everything on myself.<br>
+  This is the exact protocol that took me from “crawling to the bathroom” to “walking the dog” in 36 hours.</p>
+
+  <p>It’s 7 pages. No supplements to buy. No weird potions. Just what actually works right now.</p>
+
+  <a href="YOUR-STRIPE-LINK-HERE" class="button">Send me Jonathan’s protocol (£29)</a>
+
+  <p class="small">Instant PDF download • One-time payment • If it doesn’t help, I’ll refund you myself within 60 days — no questions.</p>
+
+  <hr>
+
+  <p class="small">Not medical advice • Based on 2025 ACR guidelines • Always check with your own doctor, especially if you have kidney issues or are on blood thinners.</p>
+  <p class="small">© 2025 Jonathan Kelly • goutflarerelief.com</p>
+
 </body>
 </html>
